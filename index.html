@@ -15,7 +15,7 @@
     <p>Este é uma tag parágrafo</p>
 
     <!-- a href="" tag referente ao direcionamento de um link-->
-    <a href="">Esta é um tag link</a>
+    <a href="../Estudos-Front/pagina2.html">Esta é um tag link</a>
 
     <!-- Tamanho do texto em h1-->   
     <h1>Este é um texto h1</h1>
@@ -47,30 +47,46 @@
     <!--A tag <form></form> responsável pela criação do formulário -->
     <form>
         <!--A tag <label></label> serve para criação de uma etiqueta -->
-        <label for="fname">Nome:</label><br>
+        <label for="lname">Nome:</label><br>
         <!-- tag <input> serve imputar dados, juntamente com o atributo type  <input type>-->
-        <input type="text" id="fname" name="fname"><br>
-        <label for="lname">Email:</label><br>
-        <input type="email" id="lname" name="lname"><br>
-        <input type="submit" id ="submit" name="submit"><br>
-        <p>Qual o seu tipo de locomoção ao trabalho?</p>
-        <input type="checkbox" id="veículo1" name="veículo1" value="Bicicleta">
-        <label for="vehicle1">Bicicleta</label><br>
-        <input type="checkbox" id="veículo2" name="veículo2" value="Carro">
-        <label for="vehicle2"> Carro</label><br>
-        <input type="checkbox" id="veículo3" name="veículo3" value="Transporte">
-        <label for="vehicle3">Transporte público</label>
-        <p>
-            <form>
-                <input type="radio" id="Trem" name="Trem">
-                <label for="radio">Trem</label><br>
-                <input type="radio" id="Metro" name="Metro">
-                <label for="radio">Metrô</label><br>
-                <input type="radio" id="Trem" name="Trem">
-                <label for="radio">Trem</label><br>
-            </form>
-        </p>
-    </form>
+        <input type="text" id="lname" name="lname"><br>
 
+        <label for="lemail">Email:</label><br>
+        <input type="email" id="lemail" name="lemail"><br>
+
+        <label for="lniver" id="lniver" name="lniver">Aniversário</label><br>
+        <input type="date" id="lniver" name="lniver"><br>
+
+        <label for ="lpass">Senha: </label><br>
+        <input type="password" id="lpass" name ="lpass"><br>
+
+        <p>
+        <!--<input type="submit" id="submit" name="submit">-->
+        <input type="button" onclick="alert('Davos enviados com sucesso!!')" value="Submit">
+        <input type="reset" id="reset" name="reset">
+        </p>   
+
+        <p><h3>Qual o seu tipo de locomoção ao trabalho?</h3></p>
+        <input type="checkbox" id="veiculo1" name="veiculo1" value="bicicleta">
+        <label for="veiculo1">Bicicleta</label><br>        
+
+        <input type="checkbox" id="veiculo2" name="veiculo2" value="carro">
+        <label for="veiculo2"> Carro</label><br>        
+
+        <input type="checkbox" id="veiculo3" name="veiculo3" value="transporte">
+        <label for="veiculo3">Transporte público</label><br>        
+
+        <form>
+            <input type="radio" id="trem" name="fav_language" value="Trem">
+            <label for="trem">Trem</label><br>
+    
+            <input type="radio" id="metro" name="fav_language" value="Metrô">
+            <label for="metro">Metrô</label><br>
+    
+            <input type="radio" id="onibus" name="fav_language" value="Ônibus">
+            <label for="onibus">Ônibus</label><br>
+        </form>
+        
+    </form>
 </body>
 </html>
