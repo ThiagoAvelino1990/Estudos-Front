@@ -1,6 +1,7 @@
+<!--!DOCTYPE tag destinada para informar a versão do html. Com a chegada do html5 esta tag será permanente-->
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><!---->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,19 +21,19 @@
     <h1>Este é um texto h1</h1>
 
     <!-- Tamanho do texto em h2-->   
-    <h2>Este é um texto h1</h2>
+    <h2>Este é um texto h2</h2>
 
     <!-- Tamanho do texto em h3-->   
-    <h3>Este é um texto h1</h3>
+    <h3>Este é um texto h3</h3>
 
     <!-- Tamanho do texto em h4-->   
-    <h4>Este é um texto h1</h4>
+    <h4>Este é um texto h4</h4>
 
     <!-- Tamanho do texto em h5-->   
-    <h5>Este é um texto h1</h5>
+    <h5>Este é um texto h5</h5>
 
     <!-- Tamanho do texto em h6-->   
-    <h6>Este é um texto h1</h6>
+    <h6>Este é um texto h6</h6>
 
     <p>
         <!-- A tag <br> utilizada para pular linha-->
@@ -51,7 +52,24 @@
         <input type="text" id="fname" name="fname"><br>
         <label for="lname">Email:</label><br>
         <input type="email" id="lname" name="lname"><br>
-        <input type="submit" id ="submit" name="submit">
+        <input type="submit" id ="submit" name="submit"><br>
+        <p>Qual o seu tipo de locomoção ao trabalho?</p>
+        <input type="checkbox" id="veículo1" name="veículo1" value="Bicicleta">
+        <label for="vehicle1">Bicicleta</label><br>
+        <input type="checkbox" id="veículo2" name="veículo2" value="Carro">
+        <label for="vehicle2"> Carro</label><br>
+        <input type="checkbox" id="veículo3" name="veículo3" value="Transporte">
+        <label for="vehicle3">Transporte público</label>
+        <p>
+            <form>
+                <input type="radio" id="Trem" name="Trem">
+                <label for="radio">Trem</label><br>
+                <input type="radio" id="Metro" name="Metro">
+                <label for="radio">Metrô</label><br>
+                <input type="radio" id="Trem" name="Trem">
+                <label for="radio">Trem</label><br>
+            </form>
+        </p>
     </form>
 
 </body>
