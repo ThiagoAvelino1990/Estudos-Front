@@ -1,0 +1,98 @@
+/*resetando o CSS(limpando coisas que já vem por padrão no navegador)*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;/*estilo da lista é igual a nenhum. Retirando os pontos da lista*/
+}
+
+/*Estilo CSS com especificidade de 0,0,1*/
+body {
+    background-image: url(./assests/bg.jpg);    /*Buscando a imagem de background*/
+    background-position: top center;            /*posisionamento do backround. Topo e centralizado*/
+    background-size: 100% auto;                 /*100% da largura disponível do background e o auto é a altura*/
+    background-repeat: no-repeat;               /*não repetir o background*/
+    background-color: #121214;                /*cor no formato hexadecimal*/
+}
+
+body * {
+    font-family: 'Inter', sans-serif;/*Fontes serifadas*/
+    line-height: 160%;/*Altura da linha de 160%*/
+}
+
+/*o asteríscto(*) significa que está buscando todos os elementos que estão dentro do main*/
+/*main * {
+    border: 1px solid red;
+}*/
+
+main {
+    max-width: 580px;/*largura máxima de 580 píxels*/
+    width: 90%;/*Largura de 90% da tela*/
+    margin: auto;/*Margens automáticas*/
+
+    display: grid;
+    gap: 24px;
+
+    margin-top: 32px;
+
+    /*outra possibilidade*/
+    /*display: flex;
+    flex-direction: column;
+    gap: 24px;
+    */
+}
+
+/*seção*/
+section {
+    color: white;
+
+    background-image: linear-gradient(90deg, #9572fc 0%, #49e7ad 50.52%, #e2d45c 100%); /*Forma de realizar uma "degradê" de cores*/
+    padding-top: 4px;
+    border-radius: 10px;
+}
+
+section div {
+
+    background-color: #242634;
+    padding: 32px;
+    padding-top: 24;
+    border-radius: 8px;
+}
+
+section h2 {
+    font-weight: 900;/*peso de 900*/
+    font-size: 24px;/*tamanho de 24px*/
+    letter-spacing: -0.47px;/*espaço entre as letras é de -0.47px*/
+}
+
+
+section p {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: -0.18px;
+    color: #A1A1AA;
+}
+
+/*introduzindo um display*/
+section ul {
+    display: flex;/*Serve para colocar as caixas uma ao lado da outra, uma vez que cada caixa preenche uma linha inteira no HTML*/
+    flex-wrap: wrap;
+    gap: 16px;/*propriedade gap só funciona caso a propriedade display for flex*/
+
+    margin-top: 24px;
+}
+
+/*classe games-list. Estilizando as tags img dentro da classe*/
+.games-list img{
+    border-radius: 8px;
+    width: 90px;
+}
+
+/*classe streamers-list. Estilizando as tags img dentro da classe*/
+.streamers-list img{
+    border-radius: 50%; /*borda arredondada*/
+    width: 70px;
+}
