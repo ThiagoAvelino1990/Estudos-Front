@@ -15,8 +15,9 @@ ________________________________________________________________________________
 * Git e Github
 
 
-
 ## Projeto construído no evento Next Level Week da RocketSeat
+
+![preview](./.github/preview.png)
 
 [ Clique aqui para acessar](https://thiagoavelino1990.github.io/Estudos-Front/NLW/NLW-Explorer/)
 
