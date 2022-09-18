@@ -6,6 +6,8 @@
 
 _____________________________________________________________________________________________________
 
+# PROJETOS
+
 ## NLW eSports
 ### Trilha Explorer
 
@@ -15,9 +17,9 @@ ________________________________________________________________________________
 * Git e Github
 
 
-## Projeto construído no evento Next Level Week da RocketSeat
+### Projeto construído no evento Next Level Week da RocketSeat
 
-![preview](./.github/preview.png)
+![preview](./NLW/NLW-Explorer/preview.png)
 
 [ Clique aqui para acessar](https://thiagoavelino1990.github.io/Estudos-Front/NLW/NLW-Explorer/)
 
