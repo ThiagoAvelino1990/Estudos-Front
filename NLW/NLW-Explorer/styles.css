@@ -61,7 +61,7 @@ header img{
 
 
 main {
-    max-width: 580px;/*largura máxima de 580 píxels*/
+    max-width: 360px;/*largura máxima de 580 píxels*/
     width: 90%;/*Largura de 90% da tela*/
 
     margin: 32px auto;/*Margens, quando contém dois valores ele verifica primeiro em cima de depois em baixo. Neste caso 32px em cima e automático em baixo*/
@@ -76,6 +76,7 @@ main {
     flex-direction: column;
     gap: 24px;
     */
+
 }
 
 /*seção*/
@@ -138,7 +139,18 @@ section ul li:hover {
     width: 70px;/*largura da borda*/
 
     border: 1px solid #443e54;/*tamanho e cor da borda*/
+    
 }
+
+/*espaçamento entre as imagens dos streamers*/
+.streamers-list li{
+    margin: 10px;
+}
+
+/*espaçamento entre o ul*/
+/*.streamers-list{
+    margin: 10px;
+}*/
 
 
 /*animation*/
@@ -196,4 +208,15 @@ main section:nth-child(3){
         transform: translateX(0);/*terminar animação em 0px do eixo X*/
     }
     
+}
+
+
+/*swiper*/
+section {
+    overflow: hidden;
+}
+
+section ul {
+    flex-wrap: nowrap;
+    gap: 0;
 }
