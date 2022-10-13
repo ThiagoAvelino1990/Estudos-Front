@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+        body {
+            background-color: rgb(105, 105, 173);/* Isso é um comentário em CSS */
+            color: white;
+            font: normal 20pt Arial;
+        }
+        h1 {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo !</h1> <!-- Isso é um comentário em HTML-->
+    <p>Já me livrei da maldição</p>
+    <script>
+        var n1 = Number.parseInt(prompt('Digite um número'));//window.prompt retorna uma string, é uma característica do comando
+        var n2 = Number.parseInt(prompt('Digite um outro número'));
+        var s = n1 + n2;
+        window.alert('A soma dos valores é: ' + s);
+
+        //Exemplo Number
+        var n3 = Number(prompt('Digite um número'));//5,5
+        var n4 = Number(prompt('Digite um outro número'));//2,0
+        var s1 = n3 + n4;
+        window.alert('A soma dos valores é: ' + s1);
+
+        // number + number para adição
+        // string + string para concatenação
+
+        //Number.parseInt(n) -> converção para número inteiro
+        //Number.parseFloat(n) -> converção para número real
+        //Number(n) -> conversão para inteiro/ real, porém o JavaScript que decide
+
+        //Converção de número para string
+        //String(n)
+        //n.toString()
+
+        //${} -> usa template string
+        //Utilizado para interporlar o placeholder, strings com variáveis
+
+        //Formantando Strings
+        //s.length  mostra o tamanho da string
+        //s.toUppercase()  tudo para 'MAÍUSCULA'
+        //s.toLowerCase()  tudo para 'mínuscula'
+
+    </script>
+</body>
+</html>
