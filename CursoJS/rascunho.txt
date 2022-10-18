@@ -1,0 +1,305 @@
+`${O que faz o JavaScript}`
+
+Cliente x Server
+
+Cliente <-> Navegador <-> Nuvem Internet <-> Servidor
+
+- JavaScript funciona mais em client side. mas também pode ser utilizada em backend
+- Tecnologias relacionadas
+	* HTML		 : Responsável pelo contéudo
+	* CSS		 : Responsável pelo design
+	* JavaScript : Responsável pelas integrações/ interações
+
+/*Q01
+Sabe a diferença entre um cliente e um servidor para a Internet?
+*/
+/*Q02
+Para que serve HTML, CSS, e JavaScript?
+*/
+/*Q03
+Cite 4 sites que fazem uso do JavaScript?
+*/	
+
+------------------------------------------------------------------
+`${Evolução do JavaScript}`
+
+/*Q01
+Sabe que empresa criou o JavaScript?
+*/
+/*Q02
+Java e JavaScript possuem alguma relação?
+*/
+/*Q03
+Oque ECMAScript tem a ver com JavaScript?
+*/
+/*Q04
+Sabia que o programa WhatsApp desktop é criado em JavaScript ?
+*/
+
+------------------------------------------------------------------
+`${Primeiros Passos JavaScript}`
+Bibliografia
+	- Livro: JavaScript o guia definitivo
+	- Livro: Javascript guia do programador
+	- Livro: Guia de referência da Mozilla developer.mozilla.org
+	- Livro: guia de referência da Ecma ecma-international.org -> ECMA 262
+
+Download Nodejs
+https://nodejs.org/en/
+
+------------------------------------------------------------------
+`${Primeiros Scripts}`	
+
+------------------------------------------------------------------
+`${Tipos de dados e Variáveis}`
+
+Existem 3 formas de demilitar string no javascript
+"" Por aspas duplas
+'' Por aspas simples
+`` Por cráse
+
+Identificadores
+	- Podem começar com letra, $, _
+	- não podem começar com númeres
+	- É possível usar letras ou números
+	- É possível usar acentos e símbolos
+	- Não podem conter espaços
+	- Não podem ser palavras reservadas
+
+Dicas
+	- Maísculas e minúsculas fazem diferença
+	- Tenta escolher nomes coerentes para variáveis
+	- Evite se tornar um `programador alfabeto`ou um `programador contador`
+
+Tipo number
+	5 18 -12 0.5 -15.9 3.14 8.0
+		infinity
+		Nan(Not a number)
+
+Tipo string
+	"Google" 'JavaScript' `Maria`
+
+Tipo boolean
+	true false	
+
+Tipo NULL
+Tipo undefined
+Tipo object
+	- Array
+Tipo function
+
+/*------------------------------------------------------------------*/
+/*
+-Curso JavaScript #06
+
+Q01
+Oque é uma variável
+*/
+/*Q02
+Como declarar uma variávle numérica inteira ou real usando JS?
+*/
+/*Q03
+Quais são os tipos primitivos do JavaScript
+*/
+/*Q04
+Oque significa colocar o valor null dentro de uma variável ?
+*/
+/*------------------------------------------------------------------*/
+
+`${Manipulação de Dados}`
+
+var ou let ou const para declaração de variáveis
+
+
+
+        // number + number para adição
+        // string + string para concatenação
+
+        //Number.parseInt(n) -> converção para número inteiro
+        //Number.parseFloat(n) -> converção para número real
+        //Number(n) -> conversão para inteiro/ real, porém o JavaScript que decide
+
+        //Converção de número para string
+        //String(n)
+        //n.toString()
+
+        //${} -> usa template string
+        //Utilizado para interporlar o placeholder, strings com variáveis
+
+        //Formantando Strings
+        //s.length  mostra o tamanho da string
+        //s.toUppercase()  tudo para 'MAÍUSCULA'
+        //s.toLowerCase()  tudo para 'mínuscula'
+
+
+        //Formatar números
+        n.toFixed(d) // Método interno de todos os number. Para quantidade de casas decimais
+        replace('.',',')//replace para trocar 
+
+        //Para mostrar o tipo de moeda
+         n1.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL'})
+	'R$ 1.545,50'
+	 n1.toLocaleString('pt-BR',{style: 'currency', currency: 'USD'})
+	'US$ 1.545,50'
+	 n1.toLocaleString('pt-BR',{style: 'currency', currency: 'EUR'})
+	'€ 1.545,50'
+
+/*----------------------------*/
+/*Q01
+Como é possível guardar o valor digitado em um prompt() dentro de uma variável?
+Q02
+Como fazer com que um número digitado em um prompt() possa ser usado em cáculos?
+Q03
+Como transformar um texto todo para letras MAIÚSCULAS?
+Q04
+Como mostrar um número formatado como um valor monetário?
+*/
+
+`${Operadores de JavaScript}`
+	//Operadores:
+	/*aritméticos(
+		+ soma 5+2 = 7; 
+		- subtração 5-2 = 3; 
+		* multiplicação 5*2 = 10; 
+		/ divisão real 5/2 = 2.5;
+		% resto da divisão inteira 5%2 = 1; 
+		** potência 5**2 = 25
+				)
+		Precedência de operadores
+			1º ()
+			2º **
+			3º * / %(Mesma ordem de precedência. JavaScript realiza da esquerda para a direita)
+			4º + -(Mesma ordem de precedência. JavaScript realiza da esquerda para a direita)
+	*/
+	//	atribuição
+		/* = sinal de atribuição e não sinal de igual
+		auto atribuição
+			var n = 3
+			 n = n + 4 	// n+=4 n recebe ele mesmo mais 4
+			7
+			 n = n - 5 	// n-=5 n recebe ele mesmo menos 5
+			2
+			 n = n * 4 	// n*=4 n recebe ele mesmo vezes 4
+			8
+			 n = n/2 	// n/=2 n recebe ele mesmo dividido por 4
+			4
+			 n = n **2 	// n**=2 n recebe ele mesmo potência 2
+			16
+			 n = n%5 	// n%=5 n recebe ele mesmo resto da divisão por 5
+			1
+
+			operador de incremento
+				//pós incremento
+				 var n = 10
+				 n++ //adiciona mais um
+				 n-- //subtrai mais um
+
+				 //pré incremento
+				 var n = 10
+				 ++n //adiciona mais um
+				 --n //subtrai mais um
+		*/
+	//	relacionais
+	//	lógicos
+	//	ternário
+
+
+/*----------------------------*/
+/*Q01
+Para que serve o operador %?
+*/
+/*Q02
+6 + 4 / 2 é igual a 5 ou a 8?
+*/
+/*Q03
+se uma variável n está valendo 10 e executamos um n+=5, qual será o seu novo valor ?
+*/
+/*Q04
+Para que servem os operadores ++ e -- ao lado de uma variável?
+*/
+
+`${Operadores de JavaScript. (Parte 2)}`
+
+	//	relacionais. Não tem ordem de precedência. A leitura é feita da esquerda para a direita
+		/*
+		> maior
+		< menor
+		>= maior ou igual
+		<= menor ou igual
+		== igual
+		!= diferente
+
+		obs: toda expressão que tem um operador relacional, o resultado e booleano, ou seja, verdadeiro ou falso
+
+		Procedência 1º operadores aritiméticos
+			    2º operadores relacionais
+		/*
+		Exemplos 
+		Valor
+		idade
+		curso
+		n1!=n2
+		*/
+			identidade	    		
+			5 == 5 true //sinal de igualdade 
+			5 == '5' true //sinal de igualdade não testa o tipo. São valores de tipos diferentes, mas os mesmos tem a mesa grandeza
+			//identidade(igualdade restrita)
+			5 ==='5' false //5 identico a 5
+			5 === 5 true // 5 é identico a 5
+			5 !== '5' //desiqual restrito
+		*/	
+	/*	lógicos
+		! Negação. 'Não' lógico
+			O resultado é ao contrário, ou seja, se for um NÃO verdadeiro, o resultado é falso.
+		&& Conjunção. 'e' lógico
+			Deve conter dois resultados verdadeiros para ter o resultado como verdadeiro
+		|| Disjunção. 'ou' lógico
+			Basta ter um resultado verdadeiro para ter o resultado como verdadeiro
+
+			Precedência
+				1º operador aritimético
+				2º operador relacional
+				3º operador lógico
+				obs: Caso tenha apenas operadores lógicos, a ordem é:
+				1º não, 2º 'e' 3º 'ou'
+		*/
+
+	/*	ternário - dois operadores dentro da mesma expressão
+			?
+			:
+		teste ? true : false
+		média >= 7.0 ? "Aprovado" : "Reprovado"
+
+		Teste no node
+		> var media = 5.5
+
+		undefined
+		> media > 7?"APROVADOR":"REPROVADO"
+		'REPROVADO'
+		> media += 3
+		8.5
+		> media > 7?"APROVADOR":"REPROVADO"
+		'APROVADOR'
+		> media > 7?"APROVADO":"REPROVADO"
+		'APROVADO'
+		> var x = 8
+		undefined
+		> var res = x % 2 ==0?5:9
+		undefined
+		> res
+		5
+		> x
+		8
+		> res
+		5
+		> var idade = 19
+		undefined
+		> var r = idade >= 18?"MAIOR":"MENOR"
+		undefined
+		> r
+		'MAIOR'
+		> idade
+		19
+		>
+	*/
+

@@ -14,10 +14,33 @@
 <body>
     
     <script>
+        //Função document.write escreve no documento html
+        //Formantando Strings
         var nome = window.prompt('Qual é o seu nome? ');
+        //s.length  mostra o tamanho da string
+        //utilizando a tag <br> breakrole, para quebrar a linha de baixo
         document.write(`Seu nome tem ${nome.length} letras.<br>`);
-        document.write(`Seu nome em maísculas é <strong>${nome.toUpperCase()}</strong><br>`);//<br> pular linha. <strong> deixar a letra em negrito
-        document.write(`Seu nome em minuscula é ${nome.toLowerCase()}<br>`);
+        //s.toUppercase()  tudo para 'MAÍUSCULA'
+        //utilizando a tag <strong> para deixar em negrito
+        document.write(`Seu nome em maiúscula é <strong>${nome.toUpperCase()}</strong><br>`);//<br> pular linha. <strong> deixar a letra em negrito
+        //s.toLowerCase()  tudo para 'mínuscula'
+        document.write(`Seu nome em minúscula é ${nome.toLowerCase()}<br>`);
+
+        //Formatar números
+        var n1 = Number.parseFloat(window.prompt("Digite um número"));
+        //toFixed para mostrar a quantidade de casas decimais
+        document.write(`Colocando duas casas decimais: ${n1.toFixed(2)}<br>`);
+        //replace para mudar um tipo de dado
+        document.write(`Trocando ponto por vírgula: ${n1.toFixed(2).replace('.',',')}<br>`);    
+
+        //Comando para mostrar o tipo de moeda
+        //Em reais
+        document.write(`Mostrando o valor em reais ${n1.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL'})}<br>`);
+        //Em dólar    
+        document.write(`Mostrando o valor em dólar ${n1.toLocaleString('pt-BR',{style: 'currency', currency: 'USD'})}<br>`);
+        //Em euro    
+        document.write(`Mostrando o valor em euro ${n1.toLocaleString('pt-BR',{style: 'currency', currency: 'EUR'})}<br>`);       
+
     </script>
 </body>
 </html>

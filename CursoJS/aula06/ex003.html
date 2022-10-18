@@ -20,35 +20,52 @@
     <h1>Olá, mundo !</h1> <!-- Isso é um comentário em HTML-->
     <p>Já me livrei da maldição</p>
     <script>
-        var n1 = Number.parseInt(prompt('Digite um número'));//window.prompt retorna uma string, é uma característica do comando
-        var n2 = Number.parseInt(prompt('Digite um outro número'));
-        var s = n1 + n2;
-        window.alert('A soma dos valores é: ' + s);
-
-        //Exemplo Number
-        var n3 = Number(prompt('Digite um número'));//5,5
-        var n4 = Number(prompt('Digite um outro número'));//2,0
-        var s1 = n3 + n4;
-        window.alert('A soma dos valores é: ' + s1);
-
         // number + number para adição
         // string + string para concatenação
 
         //Number.parseInt(n) -> converção para número inteiro
+        //Exemplo de Number.parseInt
+        var n1 = Number.parseInt(window.prompt('Digite um número'));//window.prompt retorna uma string, é uma característica do comando
+        var n2 = Number.parseInt(window.prompt('Digite um outro número'));
+        var s = n1 + n2;
+        window.alert('A soma dos valores é: ' + s);
+
         //Number.parseFloat(n) -> converção para número real
+        //Exemplo Number
+        var n3 = Number(window.prompt('Digite um número'));//5,5
+        var n4 = Number(window.prompt('Digite um outro número'));//2,0
+        var s1 = n3 + n4;
+        window.alert('A soma dos valores é: ' + s1);
+
         //Number(n) -> conversão para inteiro/ real, porém o JavaScript que decide
+        //Exemplo de number.parseFloat
+        var n5 = Number.parseFloat(window.prompt('Digite um número'));//5,5
+        var n6 = Number.parseFloat(window.prompt('Digite um outro número'));//2,0
+        var s2 = n5 + n6;
+        window.alert('A soma dos valores é: ' + s2);
 
         //Converção de número para string
         //String(n)
+        window.alert("Convertendo a primeira soma em string " + String(s));
         //n.toString()
+        window.alert("Convertendo a segundao soma em string " + s.toString());
+        
 
         //${} -> usa template string
+        //crase `` é a deminilitação do que chamamos de template string
         //Utilizado para interporlar o placeholder, strings com variáveis
+        window.alert("Vamos verificar agora a questão de concatenação!Com '+' e template string ${s} ");
+        var nome = window.prompt("Digite o seu nome");
+        window.alert("Concatenação por + " + nome);//usa concatenação
+        window.alert(`Utilizando tempalte string ${nome}`); //usa template string
 
         //Formantando Strings
         //s.length  mostra o tamanho da string
+        window.alert(`Mostra o tamanho da string. Seu nome tem  ${nome.length} letras`);
         //s.toUppercase()  tudo para 'MAÍUSCULA'
+        window.alert(`Transforma em letra MAÍUSCULA. ${nome.toUpperCase()}`);
         //s.toLowerCase()  tudo para 'mínuscula'
+        window.alert(`Transforma em letra mínuscula. ${nome.toLowerCase()}`);
 
     </script>
 </body>

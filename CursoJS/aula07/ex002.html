@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula07 - Operadores JavaScript - Parte2</title>
+    <style>
+        /*CSS*/
+        body {
+            font-size: 24px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    </style>
+</head>
+<body>  
+    <script>
+        document.write(`<strong>Operadores JavaScript - Relacionais</strong><br>`);
+        window.alert('Toda expressão relacional, tem um resultado final do tipo boolean, ou seja. True or false!');
+        var n1 = Number.parseFloat(window.prompt(`Digite um número`));
+        var n2 = Number.parseFloat(window.prompt(`Digite outro número`));
+        document.write(`Maior: ${n1} > ${n2}  ${n1>n2}<br>`);
+        document.write(`Menor: ${n1} < ${n2}  ${n1<n2}<br>`);
+        document.write(`Maior ou igual: ${n1} >= ${n2}  ${n1>=n2}<br>`);
+        document.write(`Menor ou igual: ${n1} <= ${n2}  ${(n1<=n2)}<br>`);
+        document.write(`Igual: ${n1} == ${n2}  ${n1==n2}<br>`);
+        document.write(`Diferente: ${n1} != ${n2}  ${n1!=n2}<br>`);
+
+        document.write(`------------------------------------------------- <br>`);
+        document.write(`<strong>Procedência para valores relacionais</strong> <br>`);
+        document.write(`Primeiro são os operadores aritiméticos e em segundo plano os relacionais. EX:<br>
+                       ${n1} > ${n2} + 10 = ${n1 > n2 + 10}<br>
+                       Isso porque o valor de n2 é ${n2 + 10}<br>
+                       Logo ${n1} > ${n2 + 10} é ${n1 > n2 + 10}<br>`);
+      
+        document.write(`------------------------------------------------- <br>`);
+        document.write(`<strong>Identidade</strong> <br>`);
+        document.write(`5==5 ${5==5} -> Sinal de igualdade.<br>`);
+		document.write(`5=='5' ${5=='5'} -> Sinal de igualdade não testa o tipo. São valores de tipos diferentes, mas eles tem a mesma grandeza<br> `);
+		document.write(`5==='5' ${5==='5'}. Igualdade restritiva. Lê-se 5 identico a 5 ?<br>`);	
+		document.write(`5===5 ${5===5}. 5 é identico a 5<br>`);	
+		document.write(`5!=='5' ${5!=='5'}. Desiqual restrito. São de tipos diferentes, mas o valor interno é o mesmo<br>`);	
+
+        document.write(`------------------------------------------------- <br>`);
+        document.write(`<strong>Lógico</strong> <br>`);
+        document.write(`Operador de negação. 'Não' lógico, representado por exclamação !<br>`);
+        document.write(`!5==5 = ${!5==5}<br>`);
+        document.write(`&& conjunção. O 'e' lógico. As duas condições devem ser verdadeiras para o resultado ser verdadeiro <br>`);
+        document.write(`5>4 && 5<6 = ${5>4 && 5<6}<br>
+                        5>4 && 5>6 = ${5>4 && 5>6}<br>
+                        5<4 && 5<6 = ${5<4 && 5<6}<br>
+                        5<4 && 5>6 = ${5<4 && 5>6}<br>`);
+        document.write(`|| disjunção. O 'ou' lógico. Uma das condições deve ser verdadeira para o resultado ser verdadeiro <br>`);
+        document.write(`5>4 || 5<6 = ${5>4 || 5<6}<br>
+                        5>4 || 5>6 = ${5>4 || 5>6}<br>
+                        5<4 || 5<6 = ${5<4 || 5<6}<br>
+                        5<4 || 5>6 = ${5<4 || 5>6}<br>`);
+        document.write(`Ordem de precedência. 1º Operador aritimético, 2º relacional, 3º lógico(1º!, 2º&&, 3º||)<br>`);
+
+        document.write(`------------------------------------------------- <br>`);
+        document.write(`<strong>Ternário</strong><br>`);
+        document.write(`Dois operadores dentro da mesma expressão.<br>
+                       Sintaxe: teste?true:false<br>
+                       n1 >= n2?"É maior":"É menor" <br>
+                       Resultado: ${n1>=n2?"É maior":"É menor"}`);
+
+
+
+			
+    </script>
+</body>
+</html>
