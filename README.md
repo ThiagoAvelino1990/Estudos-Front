@@ -36,7 +36,7 @@ ________________________________________________________________________________
 ![preview](./Online_Tutorials/preview.png)
 
 
-[ Clique aqui para acessar o projeto(em construção)][https://thiagoavelino1990.github.io/Estudos-Front/Online_Tutorials/]
+[ Clique aqui para acessar o projeto(em construção)](https://thiagoavelino1990.github.io/Estudos-Front/Online_Tutorials/)
 
 _____________________________________________________________________________________________________
 
