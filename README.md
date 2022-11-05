@@ -27,11 +27,17 @@ ________________________________________________________________________________
 
 _____________________________________________________________________________________________________
 
-## Oline_tutorials
+## Online_tutorials
 
-### [Online_Tutorials](https://www.youtube.com/c/OnlineTutorials4Designers)
+### Projeto em construção. 
+
+### [Link do tutorial(youtube)](https://www.youtube.com/c/OnlineTutorials4Designers)
+
+![preview](./Online_Tutorials/preview.png)
 
 
-[Acesse o link](https://thiagoavelino1990.github.io/Estudos-Front/Online_Tutorials/#)
+[ Clique aqui para acessar o projeto(em construção)][https://thiagoavelino1990.github.io/Estudos-Front/Online_Tutorials/]
 
 _____________________________________________________________________________________________________
+
+
