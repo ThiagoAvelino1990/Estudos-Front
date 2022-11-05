@@ -1,0 +1,167 @@
+/*Elemtno raíz do documento*/
+:root
+{
+    /* Declaração de uma "variável" com o seu valor.
+    A mesma deve ser declarada com os sinais -- */
+    --clr: #222327
+}
+
+
+body
+{   
+    display: flex; /* Especifica o comportamento do elemento 'body' com o atributo flexível*/                      
+    justify-content:first baseline; /* Alinha itens do contêiner flex acima quando os mesmos não utilizam todo o espaço disponível no html*/
+    align-items: top; /* Alinhamento padrão dentro do contêiner flex*/
+    min-height: 100vh; /*Altura mínima de um elemento. vh => viewport units height => Área visísvel de um objeto em altura 1vh corresponde a 1%*/
+    background: var(--clr); /*Cor de fundo de acordo com a variável*/
+    font-family: 'Poppins', sans-serif; /*Fontes*/
+
+    margin-top: 80px; /*Margem top*/
+    padding: 0px; /*espaçamento*/
+    box-sizing: border-box; /*Defini como largua e altura devem ser calculadas. Se devem ou não incluir preenchimento e bordas */
+}
+
+.navigation
+{
+    position:absolute;
+    width: 500px;
+    height: 70px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    border-radius: 10px;
+}
+
+.navigation ul
+{
+    display: flex;
+    width: 550px;
+}
+
+
+.navigation ul li
+{
+    position:relative;
+    list-style:none;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+}
+
+.navigation ul li a
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+
+
+.navigation ul li a .icon
+{
+   position: relative; 
+   display: block;
+   line-height: 75px;
+   font-size: 1.5em;
+   text-align: center;
+   transition: 0.5s;
+   color: var(--clr);
+}
+
+.navigation ul li.active a .icon
+{
+   transform: translateY(-42px);
+}
+
+.navigation ul li a .text
+{
+   position: absolute;
+   color: var(--clr);
+   font-weight: 400;
+   font-size: 0.75em;
+   letter-spacing: 0.05em;
+   transition: 0.5s;
+   transform: translateY(-22px);
+}
+
+.navigation ul li.active a .text
+{
+    opacity: 1;
+    transform: translateY(-10px);
+}
+
+.indicator
+{
+    position:absolute;
+    top: -50%;
+    width: 60px;
+    height: 60px;
+    background: #29fd53;
+    border-radius: 50%;
+    border: 6px solid var(--clr);
+    transition: 0.5s;
+}
+
+.indicator::before
+{
+    content: '';
+    position: absolute;
+    top: 47%;
+    left: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-right-radius: 20px;
+    box-shadow: 1px -10px 0 0 var(--clr);
+    
+}
+
+
+.indicator::after
+{
+    content: '';
+    position: absolute;
+    top: 47%;
+    right: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-left-radius: 20px;
+    box-shadow: 0px -10px 0 0 var(--clr);
+    
+}
+
+.navigation ul li:nth-child(1).active ~ .indicator
+{
+    transform: translateX(calc(70px * 0));
+}
+
+.navigation ul li:nth-child(2).active ~ .indicator
+{
+    transform: translateX(calc(70px * 1));
+}
+
+.navigation ul li:nth-child(3).active ~ .indicator
+{
+    transform: translateX(calc(70px * 2));
+}
+
+.navigation ul li:nth-child(4).active ~ .indicator
+{
+    transform: translateX(calc(70px * 3));
+}
+
+.navigation ul li:nth-child(5).active ~ .indicator
+{
+    transform: translateX(calc(70px * 4));
+}
+
+.navigation ul li:nth-child(6).active ~ .indicator
+{
+    transform: translateX(calc(70px * 5));
+}

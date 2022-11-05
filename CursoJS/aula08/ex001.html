@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(DOM) Document Object Model</title>
+    <style>
+        body {
+            background-color:rgb(12, 52, 88);
+            color: white;
+            font: 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em javascript</p>
+
+    <!--tag div com id msg-->
+    <div id="msg">Utilizando id</div>
+    <div id="msg1">Utilizando id_1</div>
+
+    <!--tag div com o nome msg-->
+    <div name="msg">Utilizando name</div>
+
+    <!--tag div com a class msg-->
+    <div class="msg">Utilizando class</div>
+
+    <script>
+        /*Buscando ELEMENTOS HTML pela marca
+            - sintaxe: getElementsByTagName(`tag_html`)[numero_elemento]; 
+                       O exemplo abaixo buscando a tag p do HTML na segunda posição. A primeira começa com 0
+        */
+        var p1 = window.document.getElementsByTagName(`p`)[1];
+
+        /*Buscando ELEMENTO HTML pelo id
+            - sintaxe: getElementById(`id_html`);
+                       O exemplo abaixo busca o id `msg`contido dentro da tag div do HTML
+        */
+        var d = window.document.getElementById(`msg`);
+
+        /*Buscando ELEMENTOS pelo nome
+            - sintaxe: getElementById(`msg`)[numero_elemento]; 
+                       O exemplo abaixo busca o nome `msg`  contido dentro da tag div do HTML
+        */
+        var name = window.document.getElementsByName(`msg`)[0];
+
+        /*Buscando ELEMENTOS pela classe
+            - sintaxe: getElementsByClassName(`nome_classe`)[numero_elemento]; 
+                       O exemplo abaixo busca a classe `msg`  contido dentro da tag div do HTML
+        */
+        var classe = window.document.getElementsByClassName(`msg`)[0];
+
+        var body = window.document.body
+
+        /*innerText => Mostra o texto da variável*/
+        window.document.write(`Está escrito assim: `+ p1.innerText + `<br>`);//taga <br> para pular linha        
+        /*innerHTML => Mostra o HTML da variável*/
+        window.document.write(`Está escrito assim: `+ p1.innerHTML + `<br>`);
+        /*Utilizando o alert juntamente com o getElementByTagName*/
+        window.alert(`Está escrito assiim: `+ p1.innerText + `<br>`);
+        
+        window.document.write(`Imprimindo a tag class do HTML ` + classe.innerHTML + `<br>`);
+
+        /*Alterando a cor da variável p1 para preto*/
+        p1.style.color = 'black';
+
+        /*Alterando a cor da variável d para preto*/
+        d.style.color = 'black';
+
+        /*Alterando a cor da variável body para branco*/
+        //body.style.background = 'white';
+
+        /*Alterando o fundo da variável d para verde*/
+        d.style.background = 'green';
+
+        /*Alterando o valor da variável d
+        Obs: Para entendimento, está variável contém a frase `Clique em mim`,
+            porém, o texto foi resgatado com o comando getElementsByTag e alterado o texto para 
+            `Estou aguardando...`*/
+        d.innerText = 'Estou aguardando...'
+
+        /*Abaixo uma outr forma de alterar o valor de uma variável pelo id*/
+        window.document.getElementById(`msg`).innerText = `Outra forma`;
+
+        var q = window.document.querySelector(`#msg_1`);
+        q.innerText = 'Teste';
+
+        //q.style.color = 'blue';
+
+        
+        
+
+        
+
+        
+
+
+    </script>
+</body>
+</html>

@@ -1,3 +1,8 @@
+Softwares 
+VisualStudio
+Node.Js -> https://nodejs.org/en/
+
+
 `${O que faz o JavaScript}`
 
 Cliente x Server
@@ -303,3 +308,51 @@ Para que servem os operadores ++ e -- ao lado de uma variável?
 		>
 	*/
 
+
+Q01
+Qual é a diferença entre usar =. ==. === em códigos escritos em JS?
+Q02
+Em uma mesma expressão, temos os operadores || e &&. quem eu resolvo primeiro ?
+Q03	
+Sabe usar o operador ternário para colocar um entre dois valores em uma variável ?
+
+${`Entendendo o DOM`}
+Document Object Model -> DOM
+	-Conjunto de objetos dentro do navegador que da acesso aos componentes internos do site.
+	- árvore DOM do site
+		-Começa na raíz do navegador e a raíz se chama window
+			-location: url do site, pagina atual, anterior
+			-document: documento atual
+				-HTML
+					-head
+						-meta
+						-title
+						-...
+					-body
+						-h1
+						-p
+						-p
+							-strong
+						-div
+						-..
+			-history: guarda de onde veio, para onde vai
+
+Acessar os elementos
+	-por Marca(É possível selecionar mais de um objeto)
+		-getElementsByTagName()
+		var p1 = window.document.getElementsByTagName(`p`)[0];
+	-por ID
+		-getElementById()
+	-por nome
+		-getElementsByName()
+	-por classe
+		-getElementsByClassName()
+	-por seletor			
+		-querySelector()
+
+toda div é representada por uma #
+toda cloasse é representada por um ponto .
+
+var d = window.document.querySelector(div#msg); //alterações mais recente para seleção de um ID
+d.style.background = 'blue'
+ 
