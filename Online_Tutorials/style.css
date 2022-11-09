@@ -19,11 +19,13 @@ body
     margin-top: 80px; /*Margem top*/
     padding: 0px; /*espaçamento*/
     box-sizing: border-box; /*Defini como largua e altura devem ser calculadas. Se devem ou não incluir preenchimento e bordas */
+
+    /*height: 5000px;*/
 }
 
 .navigation
 {
-    position:absolute;
+    position:fixed; /*fixar a barra no menu*/
     width: 500px;
     height: 70px;
     background: #fff;
@@ -31,6 +33,8 @@ body
     justify-content: center;
     align-items: stretch;
     border-radius: 10px;
+
+    overflow:visible;
 }
 
 .navigation ul
@@ -105,6 +109,8 @@ body
     border-radius: 50%;
     border: 6px solid var(--clr);
     transition: 0.5s;
+
+    overflow: hidden;
 }
 
 .indicator::before

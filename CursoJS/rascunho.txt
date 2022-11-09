@@ -308,7 +308,7 @@ Para que servem os operadores ++ e -- ao lado de uma variável?
 		>
 	*/
 
-
+--#9
 Q01
 Qual é a diferença entre usar =. ==. === em códigos escritos em JS?
 Q02
@@ -353,6 +353,34 @@ Acessar os elementos
 toda div é representada por uma #
 toda cloasse é representada por um ponto .
 
+--querySelector que faz a seleção através de elementos do CSS
 var d = window.document.querySelector(div#msg); //alterações mais recente para seleção de um ID
 d.style.background = 'blue'
+ 
+ 
+--#10
+Q01 - Oque significa a sigla DOM?
+
+Q02 - Sabe montar a árvore DOM de um website simples ?
+
+Q03 - Oque são os elementos Parent e os elementos Child em uma árvore DOM?
+
+Q04 - Quais são os cinco principais métodos de selecionar elementos DOM dentro do Java Script ?
+
+${`Eventos DOM`}
+
+DOM - Document Object Model => facilitador que existe dentro do navegador para dar acesso aos elementos diretamente para o javascript 
+
+--Referencia de eventos JavaScript
+https://developer.mozilla.org/pt-BR/docs/Web/Events
+
+--Detecção de erros
+	- Usar Devtools dos navegadores. Clicar com o botão direito na página e ir em inspect. E verificar na aba "console";
+
+	
+
+
+
+
+
  
