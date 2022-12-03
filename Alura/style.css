@@ -1,0 +1,47 @@
+/*css style*/
+body{
+    background: #CCCCCC;
+}
+
+p{
+    text-align: center;
+    
+}
+
+/*Procura todas as tags strongs que estão dentro da tag em*/
+em strong{
+    color: #ff0000;
+}
+
+/*
+============================
+Representação de cor dem CSS
+============================
+
+Hexadecimal -> 0123456789ABCDEF
+RGB = RED GREEN BLUE
+# _ _ _ _ _ _
+0 - Ausência de cor
+F - Máximo de cor
+
+#000000 -> Preto
+#FFFFFF -> Branco
+
+#ff0000 -> Vermelho
+#00ff00 -> Verde
+#0000ff -> Azul
+
+--Representação por rgb
+rbg vai de 0 até 255
+0 -> Ausência de cor
+255 -> Máximo de cor
+
+rgb(0,0,0) -> Preto
+rgb(255,255,255) -> branco
+
+rgb(255,0,0) -> Vermelho
+rgb(0,255,0) -> Verde
+rgb(0,0,255) -> Azul
+
+
+*/

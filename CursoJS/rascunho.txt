@@ -378,8 +378,75 @@ https://developer.mozilla.org/pt-BR/docs/Web/Events
 	- Usar Devtools dos navegadores. Clicar com o botão direito na página e ir em inspect. E verificar na aba "console";
 
 	
+--#11
+--Condições simples
+--Condições compostas
+--Condições aninhadas
+--Condições multiplas
+Q01 - Três eventos que podem acontecer com elementos DOM de um site ?
+
+Q02 - Oque é uma função? Como criar funções em JS ?
+
+Q03 - Como pegar valores de caixa de texto e fazer cálculos com eles ?
+
+`${Condições em JS}`
+
+if(condição){
+	true
+}
+else{
+	false
+}
+
+//Tipos de condição
+=>Condição simples: if(condição){
+						bloco1
+					}
+------------------					
+=>Condição	composta: if(condição){
+						bloco1
+					  }
+					  else{
+						bloco2
+					  }
+------------------
+Extensão node exec para executar o JavaScript utilizando a tecla F8
 
 
+
+--#12
+
+Q01- Como usar a extensão NodeExec no VSCode?
+
+Q02- Como criar uma condição em JavaScript?
+
+Q03- Qual a diferença entre condição simples e condição composta ?
+
+
+`${Condições 2 em JS}`
+
+//Tipos de condição
+=>Condição aninhadas: 
+-Colocar outras condições dentro de uma condição composta 
+					if(condição){
+						bloco1
+					  }
+					  else{
+						if(condição){
+							bloco2
+						}
+						else{
+							bloco3
+						}
+					  }
+
+
+=>Condição multiplas:
+-Serve para valores fixos. Este tipo de condição tem a possibilidade de testar vários valores. 
+-Geralmente é utilizado em situações explícitas.
+					switch(expressao){
+
+					}
 
 
 
