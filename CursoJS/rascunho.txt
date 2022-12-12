@@ -1,4 +1,6 @@
-Softwares 
+/*
+*Softwares 
+*/
 VisualStudio
 Node.Js -> https://nodejs.org/en/
 
@@ -389,7 +391,7 @@ Q02 - Oque é uma função? Como criar funções em JS ?
 
 Q03 - Como pegar valores de caixa de texto e fazer cálculos com eles ?
 
-`${Condições em JS}`
+`${Condições Parte 1 em JS}`
 
 if(condição){
 	true
@@ -423,7 +425,7 @@ Q02- Como criar uma condição em JavaScript?
 Q03- Qual a diferença entre condição simples e condição composta ?
 
 
-`${Condições 2 em JS}`
+`${Condições Parte 2 em JS}`
 
 //Tipos de condição
 =>Condição aninhadas: 
@@ -443,11 +445,115 @@ Q03- Qual a diferença entre condição simples e condição composta ?
 
 =>Condição multiplas:
 -Serve para valores fixos. Este tipo de condição tem a possibilidade de testar vários valores. 
--Geralmente é utilizado em situações explícitas.
+-Geralmente é utilizado em situações esporádicas.
 					switch(expressao){
-
+						case valor1:
+							bloco;
+							break;	=> É obrigatório informar
+						case valor2:
+							bloco;
+							break;	=> É obrigatório informar
+						case valor3:
+							bloco;
+							break;	=> É obrigatório informar
+						default:
+							bloco;
+							break;	=> É obrigatório informar
 					}
 
 
+---------------------------
+#13
+`${Repetições Parte 1 em JavaScript}`
 
- 
+Tipos de repetições: Repetições com teste no início;
+					 Repetições com teste no final;
+					 Repetições com controle;
+
+ Q01 - Como mudar a cor de fundo de um site dinamicamente usando JS ?
+
+ Q02 - Como inserir uma imagem dentro do seu site sem ter a tag <img> previamente criada ?
+
+ Q03 - Quais são e como utilizar os tipos de condições existentes no JS ?
+
+/**
+*Estruturas de repetição
+*/
+
+-- Estrutura de repetição com teste lógico no iníco(while)
+1º Executa o teste 
+2º Executa o bloco		
+					while(condição){
+						bloco de comandos
+					}
+
+-- Estrutura de repetição com teste lógico no final(do while)
+1º Executa o bloco
+2º Executa o teste
+					do {
+						bloco de comandos
+					}while(condição)
+					
+---------------------------
+#14
+`${Repetições Parte 2 em JavaScript}`
+
+Q01 - Oque faço se quiser fazer uma determinada atividade acontecer várias vezes ?
+
+Q02 - qual a diferença entre as estruturas de condição e as estruturas de repetição ?
+
+Q03 - Qual a diferença entre as estruturas while e a do..while ?
+
+
+--Estrutura de repetição com variável de controle
+
+
+for (inicialização da variável; teste lógico; incremento){
+	bloco de comandos;
+}
+
+#15
+`${Variáves compostas}`
+
+Q01 - Qual a diferença entre as estruturas de repetição ?
+
+Q02 - Como manipular objetos de formulário no JS?
+
+Q03 - É melhor códigos menores e mais simplificados ?
+
+Q04 - Qual a dificuldade de usar array ?
+
+//variáveis simples só conseguem armazenar um valor por vez
+
+//variáveis compostas são capazes de armazenar vários valores em uma mesma estrutura
+
+Um array ou vetor ou uma variável composta é uma variável que contém vários elementos, e cada elemento é composto por um valor e uma chave d eidentificação;
+/**
+*Exemplo de declaração	
+*	let num = [5,8,4]
+*			   0 1 2
+*/ 
+
+Adicionando mais um valor ao vetor
+num.push(7);
+função push adiciona um outro índice no array, fazendo com que seja possível adicionar um outro elemento
+
+num.length;
+função length traz o comprimento do array
+
+num.sort();
+função sort coloca em ordem crescente todos os elementos de um vetor
+
+/**
+*Estrutura de repetição for in
+*Sintaxe que funciona apenas para arrays e objetos
+*/
+for (var i IN objeto){
+	bloco de comandos;
+}
+
+/**
+* função indexOf para um vetor, significa buscar uma chave a partir de um valor dentro de um vetor
+	vetor.idexOf(valor);
+	se retorno for -1, significa que o JavaScript não encontrou a chave do valor informado
+*/
