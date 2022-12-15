@@ -557,3 +557,30 @@ for (var i IN objeto){
 	vetor.idexOf(valor);
 	se retorno for -1, significa que o JavaScript não encontrou a chave do valor informado
 */
+
+
+
+#16
+`${Funções JavaScript}`
+
+Q01 - Como simplificar os códigos com o usso de array?
+
+Q02 - Como colocar um array em ordem usando apenas uma função da linguagem JavaScript ?
+
+Q03 - Como disparar uma função simples ao apertar um botão ?
+
+- Funções são ações executadas assim que são chamadas ou em decorrência de algum evento;
+- Uma função pode receber parâmetros e pode retornar um resultado;
+
+--Estrutura de uma função
+function nome_função (parâmetros){
+	Bloco de comandos;
+	return;
+}
+
+--Função com parâmetro definidos
+--Ao ingular o resultado de um parâmetro, no caso p2, caso não é enviado nenhum parâmetro, p2 assume o valor de zero
+function nome_função (p1, p2 = 0){
+	Bloco de comandos;
+	return;
+}
