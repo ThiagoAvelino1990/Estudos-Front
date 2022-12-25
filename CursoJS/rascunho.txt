@@ -584,3 +584,33 @@ function nome_função (p1, p2 = 0){
 	Bloco de comandos;
 	return;
 }
+
+#17
+`${Próximos Passos}`
+- Fundamentos;
+- Variáveis e dados;
+- Operadores;
+- Condições;
+- Repetições;
+- Arrays;
+- Funções;
+- DOM(Document Object Model)
+
+Continuar estudando...
+- HTML e CSS
+- Functions
+- Objetos
+- Modularização
+- Expressões Regulares(Regex)
+- JSON
+- Ajax
+- NodeJS
+- Jquery
+- Angular
+
+/**
+Objetos são variáveis que além de guardar valores, eles também podem guardar funcionalidades
+*Exemplo de declaração de um objeto
+*	let objeto= {nome:`José`, sexo:`M`, peso:85.4, funcao(p){}}
+*			   
+*/ 
