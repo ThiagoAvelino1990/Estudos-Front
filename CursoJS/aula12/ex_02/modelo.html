@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Verificador De Idade</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body> 
+        <!--Tag <header> para Cabeçalho-->
+        <header>
+            <h1>Verificador De Idade</h1>
+        </header>
+        <section>
+            <div>
+                <p>Ano de Nascimento
+                    <input type="number" name="dateYear" id="dateYear" min="0"> 
+                </p>                        
+                <p>Sexo:
+                    <input type="radio" name="sex" id="masc" checked><!--o comando checked faz com que obrigatoriamente SOMENTE uma das opções devem ser marcadas-->
+                    <label for="masc">Masculino</label><!--Ao criar a tag label, no atributo for deve-se informar o mesmo nome do id na tag input-->
+                    <input type="radio" name="sex" id="femi"><!--O atributo name deve ser igual quando se tem mais de um para marcar-->   
+                    <label type="femi">Feminino</label>
+                </p>            
+                <input type="button" value="Verificar" onclick="validar()">
+            </div>
+            <div id ="msg">
+                <p>Preencha os dados acima para descobrir o resultado</p>
+            </div>
+            
+        </section>
+        <!--Tag <footer> para rodapé-->
+        <footer>
+            <p>&copy; CursoemVideo</p>
+        </footer>
+        <script src="./script.js"></script>
+    </body>
+</html>
