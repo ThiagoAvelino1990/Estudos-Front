@@ -1,22 +1,29 @@
-function validar(){    
-    var dataAno     = window.document.getElementById('dateYear');
-    var anoAtual    = new Date().getFullYear();
-    var idade       = anoAtual - Number(dataAno.value);
-    var mens        = window.document.querySelector('div#msg');
+/**
+ * Declaração Variáveis
+ */
+var anoAtual    = new Date().getFullYear();                 
+var mens        = window.document.querySelector('div#msg');
+var dataAno     = window.document.getElementById('dateYear');
+
+/**
+ * Declaração funções
+ */
+function validar(){            
+    var idade  = anoAtual - Number(dataAno.value);
 
     if(dataAno.value.length == 0 || Number(dataAno.value) > anoAtual){             
         window.alert('[ERRO] - Verifique os dados e tente novamente');    
     }else{  
-        var sexo = window.document.getElementsByName('sex');
-        var gen = "";
-        var img = window.document.createElement('img');
-        img.setAttribute('id','foto');
+        var sexo    = window.document.getElementsByName('sex');
+        var gen     = "";
+        var img     = window.document.createElement('img');                 //Criando um novo elemento com id 'img'
+        img.setAttribute('id','foto');                                  //elemento.setAttribute(id, alt);
 
-        if (sexo[0].checked){
+        if (sexo[0].checked){                                           //Verificar se o primeiro radio está marcado (checkbox)
             gen = "Masculino";
             if(idade >= 0 && idade < 4){
                 //Criança
-                img.setAttribute('src', 'Bebe.png');
+                img.setAttribute('src', 'Bebe.png');                    //1º parâmetro é o comando, no caso 'src' para buscar o arquivo. 2º parâmetro é o nome do arquivo com extensão
             }else if (idade < 15 ){
                 img.setAttribute('src','Menino.png');
                  
